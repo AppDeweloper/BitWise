@@ -43,7 +43,6 @@ public class BitWise
 			for (int i = 0; i < n; i++)
 			{
 				stringBuffer1.append(binaryStr1[i]);
-				//System.out.print(binaryStr1[i]);
 			}
 			System.out.print(stringBuffer1);
 			System.out.print("\n");
@@ -79,7 +78,6 @@ public class BitWise
 			for (int i = 0; i < m; i++)
 			{
 				stringBuffer2.append(binaryStr2[i]);
-				//System.out.print(binaryStr2[i]);
 			}
 			System.out.print(stringBuffer2);
 
@@ -102,40 +100,19 @@ public class BitWise
 				System.out.println("Operation is OR (|)\n");
 				n = maxBits;
 				m = maxBits;
-				//System.out.print("\n" + number1 + " = ");
-				/*for (int i = 0; i < n; i++)
-				{
-					System.out.print(binaryStr1[i]);
-				}*/
 				System.out.print(stringBuffer1 + "     = " + number1);
-				//System.out.print(stringBuffer1);
-				//System.out.print("     = " + number1);
 				System.out.print("\n");
-				//System.out.println("\n    OR");
-
-
-				//System.out.print("\n" + number2 + " = ");
-				/*for (int i = 0; i < m; i++)
-				{
-					System.out.print(binaryStr2[i]);
-				}*/
+				
 				System.out.print(stringBuffer2 + "     = " + number2 + "\n");
-				//System.out.print(stringBuffer2);
-				//System.out.print("     = " + number2);
-				//System.out.print("\n");
 				for(int i = 0; i < m; i++){
-					System.out.print("-"); 
+					System.out.print("-"); // print a divider between the operands and the result
 				}
 				System.out.print("\n");
-				//System.out.print("\n-----------\n");
 
-
-				//System.out.println(orNumber3 + " = ");
 				n = 0;
 				StringBuffer stringBuffer3 = new StringBuffer(maxBits);
 				while(n < binaryStr1.length && n < binaryStr2.length){
 					stringBuffer3.append(binaryStr1[n] | binaryStr2[n]);
-					//System.out.print(binaryStr1[n] | binaryStr2[n]);
 					n++;
 				}
 				System.out.print(stringBuffer3);
@@ -149,40 +126,17 @@ public class BitWise
 				System.out.println("Operation is AND (&)\n");
 				n = maxBits;
 				m = maxBits;
-				//System.out.print("\n" + number1 + " = ");
-				/*for (int i = 0; i < n; i++)
-				{
-					System.out.print(binaryStr1[i]);
-				}*/
 				System.out.print(stringBuffer1 + "     = " + number1 + "\n");
-				//System.out.print(stringBuffer1);
-				//System.out.print("     = " + number1);
-				//System.out.print("\n");
-				//System.out.println("\n    OR");
-
-
-				//System.out.print("\n" + number2 + " = ");
-				/*for (int i = 0; i < m; i++)
-				{
-					System.out.print(binaryStr2[i]);
-				}*/
 				System.out.print(stringBuffer2 + "     = " + number2 + "\n");
-				//System.out.print(stringBuffer2);
-				//System.out.print("     = " + number2);
-				//System.out.print("\n");
 				for (int i = 0; i < m; i++){
 					System.out.print("-");
 				}
 				System.out.print("\n");
-				//System.out.print("\n-----------\n");
-
-
-				//System.out.println(orNumber3 + " = ");
+			
 				n = 0;
 				StringBuffer stringBuffer3 = new StringBuffer(maxBits);
 				while(n < binaryStr1.length && n < binaryStr2.length){
 					stringBuffer3.append(binaryStr1[n] & binaryStr2[n]);
-					//System.out.print(binaryStr1[n] | binaryStr2[n]);
 					n++;
 				}
 				System.out.print(stringBuffer3);
