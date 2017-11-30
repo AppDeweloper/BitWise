@@ -1,7 +1,8 @@
 import java.util.*;
 
 /*
-	A program that converts two base-10 numbers to binary and calculates the logical AND/OR of the two numbers
+	A program that converts two base-10 numbers to binary, calculates the logical AND/OR result of the two numbers, and prints
+	result.
 */
 public class BitWise
 {
@@ -145,7 +146,7 @@ public class BitWise
 			}
 
 			Scanner askCont = new Scanner(System.in);
-			System.out.println("Continue? (1 = yes / 2 = no)" + '\n' + '\n');
+			System.out.println("Continue? (1 = yes / 2 = no)" + '\n\n');
 			cont = askCont.nextInt();
 		}
 		while (cont == 1);
